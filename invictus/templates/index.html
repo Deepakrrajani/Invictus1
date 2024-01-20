@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+          padding: 2rem;
+        }
+    
+        .hero-section-data {
+          margin: 2rem 0;
+        }
+    
+        h1 {
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+    
+        .intro-data {
+          margin-bottom: 0;
+        }
+    
+        .hero-section-image {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        figure {
+          position: relative;
+        }
+    
+        figure::after {
+          content: "";
+          width: 60%;
+          height: 80%;
+          position: absolute;
+          left: 50%;
+          top: -5rem;
+          z-index: -1;
+        }
+    
+        .img-style {
+          width: 100%;
+          height: auto;
+        }
+      </style>
+</head>
+<body>
+    <div>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div style="display: flex; margin-left: 40px;">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <img src="static/logo.jpg" height="100rem" width="100rem" />
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mt-4 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="contact" class="nav-link px-2">Contact Us</a></li>
+            <li><a href="/user" class="nav-link px-2">Student</a></li>
+            <li><a href="/insti2" class="nav-link px-2">Institute user</a></li>
+          </ul>
+      </div>
+
+      <div class="col-md-3 text-end">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hero-section-data">
+              <p class="intro-data">Welcome To</p>
+              <h1>Education Creative</h1>
+              <p class="margin">
+                Our mission is clear: leveraging AI to support underprivileged students and prevent dropouts due to personal reasons. We're dedicated to providing targeted assistance, addressing academic challenges, and empowering individuals for a more inclusive and equitable education.
+              </p>
+              <a href="/user" class="btn btn-primary">Student? Fill Details Here </a>
+              <br>
+              <br>
+              <a href="/insti2" class="btn btn-primary">Institute user? upload file </a>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="hero-section-image">
+              <figure>
+                <img src="static/st.jpg" height="350rem" width=auto />
+
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
