@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/main": {
+      "main": {
         "runtime": "vercel-python@3.10.10",
         "memory": 128
       }
