@@ -1,9 +1,13 @@
 {
-    "functions": {
-      "main": {
-        "runtime": "vercel-python@3.10.10",
-        "memory": 128
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@now/python"
     }
-  }
-  
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "main.py" }
+  ]
+}
